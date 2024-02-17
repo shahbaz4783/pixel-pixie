@@ -2,10 +2,18 @@ import { MdDashboard } from 'react-icons/md';
 
 export const navLinks = [
 	{
-		label: 'Home',
-		path: '/',
+		label: 'Profile',
+		path: '/profile',
 		icon: MdDashboard,
 	},
+	{
+		label: 'Pricing',
+		path: '/pricing',
+		icon: MdDashboard,
+	},
+];
+
+export const servicesLinks = [
 	{
 		label: 'Image Restore',
 		path: '/transformations/add/restore',
@@ -29,16 +37,6 @@ export const navLinks = [
 	{
 		label: 'Background Remove',
 		path: '/transformations/add/removeBackground',
-		icon: MdDashboard,
-	},
-	{
-		label: 'Profile',
-		path: '/profile',
-		icon: MdDashboard,
-	},
-	{
-		label: 'Buy Credits',
-		path: '/credits',
 		icon: MdDashboard,
 	},
 ];
