@@ -13,8 +13,8 @@ const Navbar = () => {
         </Link>
 			</div>
 			<nav className='hidden md:flex list-none gap-4'>
-				{navLinks.map((data) => (
-					<LinkItem href={data.path}>{data.label}</LinkItem>
+				{navLinks.map((data, index) => (
+					<LinkItem key={index} href={data.path}>{data.label}</LinkItem>
 				))}
 			</nav>
 			<menu className='hidden md:flex gap-6'>

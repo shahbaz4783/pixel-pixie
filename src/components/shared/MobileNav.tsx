@@ -23,8 +23,8 @@ const MobileNav = () => {
 				<SheetTitle>Pixel Pixie</SheetTitle>
 				<SheetDescription>
 					<nav className='list-none flex flex-col'>
-						{navLinks.map((data) => (
-							<LinkItem href={data.path}>{data.label}</LinkItem>
+						{navLinks.map((data, index) => (
+							<LinkItem key={index} href={data.path}>{data.label}</LinkItem>
 						))}
 					</nav>
 					<menu className='flex flex-col gap-6'>
